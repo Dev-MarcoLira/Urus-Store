@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+
+	background-color: #03030D;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    
+    padding-top: 20px;
+    flex: 1;
+}
+
+.container {
+    width: 100%;
+
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    width: 90%;
+    
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.table h3{
+    font-size: 18px;
+
+    font-weight: bold;
+    color: white;
+}
+
+.table a, .table span{
+    text-decoration: none;
+    color: azure;
+}
+
+.table > div{
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.body{
+    margin-top: 20px;
+}
+
+.line{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 10px 5px;
+    margin: 10px 0;
+
+    background-color: #3e3e489c;
+}
+
+.product, .rate{
+    text-align: center;
+}
+
+.product, .rate{
+    width: 150px;
+    line-break: auto;
+}
+
+h2, h3, h4, h5, h6, span{
+	font-family: 'Sofia Sans';
+	text-transform: uppercase;
+}
+
+
+label, a, p, span, input, h1{
+	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
+}
+
+table{
+    margin: 0 !important;
+}

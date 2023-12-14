@@ -1,0 +1,1 @@
+const fullPath = 'http://localhost/UrusStore/';

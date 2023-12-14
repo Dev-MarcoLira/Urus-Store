@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+
+	overflow-x: hidden;
+	background-color: #03030D;
+}
+
+main{
+	flex: 1;
+}
+
+.container{
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.disabled{
+	display: none;
+}
+
+h1, h2, h3, h4, a, button, input, span, p, li{
+    color: white;
+}
+
+p, input[type = submit], h3{
+    font-family: 'Sofia Sans';
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+}
+
+a, label, input, h2, legend{
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+main input{
+	padding: 2px 2px 2px 5px;
+
+	border: 1px solid black;
+	color: black !important;
+}
+
+main{
+	width: 100%;
+}
+
+main .container{
+	margin-top: 70px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#form-container form{
+	width: 100%;
+	max-width: 400px;
+
+	padding: 10px;
+	border: 1px solid white;
+}
+
+form .wrapper{
+	margin: 5px 0;
+}
+
+.wrapper > div{
+	display: flex;
+}
+
+.wrapper legend{
+	font-size: 12px;
+}

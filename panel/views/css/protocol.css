@@ -1,0 +1,547 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;    
+}
+body,html
+{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+
+    
+    background-color: rgba(16, 15, 20, 1);
+}
+
+h1, h2, h3, h4, a, button, input, span, p, li{
+    color: white;
+    font-family: 'Source Sans Pro';
+  }
+  
+li a, p, h3{
+    font-family: 'Source Sans Pro';
+}
+
+
+.main 
+{   
+    display: flex;
+    width: 100%;
+    flex: 1;
+
+    flex-direction: column;
+}
+.pai
+{
+width: 100%;
+height: 100%;
+display: flex;
+}
+.fot2
+{   
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.fot2 .left{
+    display: flex;
+    justify-content: center;
+}
+
+.left 
+{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+
+    overflow-y: hidden;
+    border-right: 2px solid rgba(71, 71, 71, 1);
+}
+
+#chat-trigger{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#chat-trigger img{
+    width: 100%;
+    height: 100%;
+
+    filter: invert(1);
+    object-fit: contain;
+}
+
+#chats{
+    width: 100%;
+    height: 55vh;
+
+    padding-right: 2px;
+    overflow-y: scroll;
+}
+
+#chats::-webkit-scrollbar{
+    width: 7px;
+}
+
+#chats::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: rgb(113,113,113);
+    transform: 0.3s; 
+}
+
+#chats::-webkit-scrollbar-thumb:hover{
+    background: rgb(80,80,80);
+}
+
+#chats > div{
+    width: 100%;
+    max-height: 30%;
+
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+}
+
+#chats > div::-webkit-scrollbar {
+    width: 5px;
+}
+
+#chats > div::-webkit-scrollbar-thumb {
+    background: rgb(90,90,90);
+    border-radius: 4px;
+    transform: 0.3s; 
+}
+
+#chats > div::-webkit-scrollbar-thumb:hover{
+    background: rgb(70,70,70); 
+}
+
+#chats .label{
+    width: 100%;
+    height: 50px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding: 10px 15px;
+
+    cursor: pointer;
+}
+
+.label.active{
+    margin-top: 10px;
+}
+
+.label .img{
+    width: 15px;
+    height: 15px;
+
+    background-image: url('http://localhost/UrusStore/views/images/icons/bottom-arrow-chat.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.label.active .img{
+    background-image: url('http://localhost/UrusStore/views/images/icons/up-arrow-chat.png');
+}
+
+.label span{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.chats{
+    width: 100%;
+    display: none;
+
+    padding: 0 20px;
+}
+
+.chats.active{
+    display: block;
+}
+
+.chat-single{
+    display: flex;
+    align-items: center;
+
+    padding: 10px 0;
+    border-bottom: 2px solid #5D5C5F63;
+}
+
+.chat-single a{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.chat-single .texts{
+    margin-left: 10px;
+}
+
+.chat-single .username{
+    text-transform: uppercase;
+}
+
+.chat-single .title{
+    color: #B8B8B9;
+    text-transform: capitalize;
+}
+
+.right
+{
+    width: 75%;
+    height: 100%;
+    
+    
+}
+.container
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#options{
+    position: relative;
+}
+
+#options img{
+    cursor: pointer;
+}
+
+#burger{
+    padding: 5px 0;
+
+    display: none;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
+#burger ul{
+    width: 100%;
+}
+
+#burger li{
+    margin: 5px 0;
+    padding: 0 10px;
+
+    list-style: none;
+    text-align: center;
+}
+
+#burger li:hover{
+    transition: 0.3s;
+
+    background-color: rgba(255,255,255,0.7);
+    color: rgb(10,10,10);
+}
+
+#burger a{
+    text-decoration: none;
+}
+
+#burger.active{
+    display: block;
+}
+
+h1
+{
+    color: white;
+    font-size: 46px;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.fot2 .right
+{
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.fot2 .right img 
+{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    
+}
+
+#spaco{
+    display: flex;
+}
+
+#spaco img
+{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+#user
+{   
+    font-size: 20px;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    color: white;
+}
+#asensio
+{
+    display: flex;
+    align-items: center;
+    
+}
+#asensio *
+{
+    margin: 0 5px;
+}
+
+.pai .right{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#enviar img
+{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.msgsdaddy
+{
+    width: 100%;
+    flex: 1;
+
+    padding: 10px;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.msgsdaddy > div#scroller{
+    width: 100%;
+    max-height: 35vh;
+
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+/* SCROLLBAR  */
+
+/* width */
+#scroller::-webkit-scrollbar {
+    width: 5px;
+}
+   
+  /* Handle */
+#scroller::-webkit-scrollbar-thumb {
+    background-color: rgb(113,113,113); 
+    border-radius: 4px;
+    transition: 0.3s;
+}
+  
+  /* Handle on hover */
+#scroller::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(80, 80, 83);
+}
+
+.enviando,.recebendo
+{
+    width: 100%;
+    margin: 10px 0;
+
+    display: flex;
+    color: white;
+}
+
+
+.recebendo 
+{
+    justify-content: start;
+}
+
+.recebendo p, .enviando p{
+    max-width: 450px;
+    padding: 20px;
+    
+    word-wrap: break-word;
+    border-radius: 20px;
+}
+
+.recebendo p{
+    background-color: rgb(80, 80, 83) ;
+}
+
+.enviando p {
+    background-color:  rgb(81, 168, 248) ;
+}
+
+.enviando img
+{
+    position: absolute;
+    z-index: 1;
+    margin-top:70px;
+    margin-left: 20px;
+    
+}
+.enviando
+{
+    color: white;
+    z-index: 3;
+    justify-content: end;
+}
+
+
+.recebendo .img
+{
+    position: absolute;
+    z-index: 1;
+    margin-top:70px;
+    margin-right: 20px;
+}
+.baixo
+{
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+
+    background-color: rgba(217, 217, 217, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.baixo form{
+    width: 70%;
+}
+
+.baixo input 
+{   
+    outline: none;
+    font-weight: 500;
+    font-family: "Source Sans Pro";
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.14);
+}
+
+.baixo #add{
+    width: 40px;
+    height: 40px;
+
+    padding: 4px;
+
+    border-radius: 50%;
+    border: 2px solid rgba(105, 105, 108, 1);
+}
+
+.baixo img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.baixo#no-end{
+
+    width: 100%;
+    height: unset;
+    
+    margin-bottom: 20px;
+
+    display: block;
+    padding: 20px;
+}
+
+#no-end p{
+    display: block;
+    margin: 10px 0;
+
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+
+#no-end span{
+    color: beige;
+    font-weight: bold;
+}
+
+footer{
+    position: unset !important;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .pai, .fot2{
+        position: relative !important;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        display: none;
+        visibility: hidden;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        z-index: 100;
+        background-color: rgba(10,10,10, 0.95);
+    }
+
+    #chat-trigger{
+        display: block;
+        position: relative;
+        z-index: 101;
+    }
+
+    .left.active{
+        visibility: visible;
+        display: block;
+    }
+
+    h1#t{
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+}

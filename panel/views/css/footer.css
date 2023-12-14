@@ -1,0 +1,23 @@
+footer{
+  width: 100%;
+
+  padding: 20px;
+  background-color: rgba(16, 15, 20, 1);
+}
+
+footer .container{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h3{
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 24;
+}

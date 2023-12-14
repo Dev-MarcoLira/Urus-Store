@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+html, body{
+	width: 100vw;
+	height: 100vh;
+
+    overflow-x: hidden;
+    background-color: rgba(16, 15, 20, 1);
+}
+
+h1#main{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin: 0 auto;
+
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+
+input, textarea, select, form a{
+   border: 1px solid black;
+   margin: 10px 0;
+}
+
+form a{
+    background-color: beige;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+label{
+    margin: 10px 0;
+}
+
+table{
+    margin: 0 auto;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+}
+
+td, th{
+    padding: 5px;
+}
+
+button{
+    border: 1px solid black;
+    padding: 2px;
+    max-width: 100px;
+}
+
+input[type=checkbox]{
+    width: 10px;
+    margin-left: 0;
+}
+
+.container{
+    width: 1080px;
+
+    padding: 10px;
+    margin: auto;
+}
+
+.disabled{
+    display: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.productImg img{
+    object-fit: contain;
+}

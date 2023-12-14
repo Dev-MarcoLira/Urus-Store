@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body, html{
+	width: 100vw;
+	min-height: 100vh;
+
+	overflow-x: hidden;
+	background-color: #03030D;
+}
+
+main{
+	width: 100%;
+}
+
+h1, h2, h3, h4, a, button, input, span, p, li{
+  color: white;
+  font-family: 'Source Sans Pro';
+}
+
+li a, p, h3{
+  font-family: 'Source Sans Pro';
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+}
+
+.clear{
+	float: none;
+}
+
+h1{
+	color: white;
+	font-weight: 300;
+}
+
+h2{
+	font-weight: 300;
+}
+
+
+h3{
+	font-size: 30px;
+}
+
+h3.inactive{
+	display: none;
+}
+
+span{
+	cursor: pointer;
+}
+
+span.cancel{
+	color: red;
+}
+
+span.inactive{
+	display: none;
+}
+
+
+main .container h1{
+	margin-top: 20px;
+}
+
+main #main{
+	width: 100%;
+	max-width: 850px;
+
+	display: flex;
+	flex-direction: column;
+
+	margin: 20px auto 0;
+	padding: 20px;
+
+	border: 1px solid white;
+}
+
+#main section{
+	width: 100%;
+	margin: 10px 0;
+}
+
+main #main h3.subtitle{
+	width: 100%;
+	
+	color: white;
+	font-weight: bold;
+}
+
+main #address-info h3.subtitle{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+
+main #main .wrapper{
+	width: 100%;
+	max-width: 700px;
+	
+	height: 100px;
+	display: flex;
+
+	margin: 10px auto 0;
+	
+}
+
+#main .wrapper > div{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#main .wrapper .center{
+	width: 100%;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+main .wrapper .center > *{
+	text-align: left;
+}
+main #main h3{
+	margin-bottom: 10px;
+}
+
+main #main span#password{
+	width: 100px;
+	padding: 5px;
+
+	background-color: blue;
+	border-radius: 5px;
+}
+
+#main a#edit-account, #address-info a#edit-address, #address-info a#create-address{
+	width: fit-content;
+
+	margin: 10px 5px;
+	padding: 5px 10px;
+
+	border-radius: 5px;
+	text-align: center;
+	float: right;
+
+	font-size: 24px;
+	background-color: purple;
+	color: white;
+	font-weight: bold;
+}
+
+#main div.input-div{
+	width: 100%;
+	padding-right: 20px;
+}
+
+#main .input-div input{
+	width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+
+	color: rgb(19,19,19);
+	font-size: 20px;
+	background-color: rgb(255,255,255);
+}
+
+#address-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.links, #create-address{
+	margin: 20px 0 20px 50px !important;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+  
+}
+
+h2, h3, h4, h5, h6, span{
+	font-family: 'Sofia Sans';
+	text-transform: uppercase;
+}
+
+
+label, a, p, span, input, h1{
+	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
+}

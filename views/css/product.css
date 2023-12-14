@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  background-color: #03030d;
+}
+
+.container
+{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tudo h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+a,
+input,
+span,
+p,
+li,
+label {
+  font-family: "Sofia Sans";
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.tudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nome {
+  display: flex;
+  justify-content: left;
+  width: 75%;
+  color: white;
+  padding: 3em 0 1.5em 0;
+}
+.nome h2 {
+  font-weight: 774;
+  font-size: 32px;
+  transition: 0.2s;
+}
+
+.product-box {
+  display: flex;
+  padding: 0 100px;
+
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 100%;
+  align-items: flex-end;
+}
+.img img {
+  display: none;
+
+  
+  width: 32em;
+  height: 34em;
+
+  border-radius: 24px;
+  justify-self: left;
+}
+
+.img {
+  max-height: auto;
+  width: auto;
+
+  display: flex;
+  position: relative;
+
+  border: 5px solid #d000d4;
+  border-radius: 24px;
+  background-color: #c2c2c2;
+  align-items: center;
+}
+
+.img span{
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: #3e3e3e68;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.img span:hover{
+  background-color: #c2c2c292;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+span.left{
+  background-image: url('../images/icons/left-arrow.png');
+  left: 10px;
+}
+
+span.right{
+  background-image: url('../images/icons/right-arrow.png');
+  right: 10px;
+}
+
+.stuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 1.2em 0;
+}
+
+.stuff #review{
+  display: flex;
+  flex-direction: column;
+}
+
+.stuff #review img{
+  width: 30px;
+  height: 30px;
+
+  margin: 0 0.1px;
+  object-fit: contain;
+}
+
+#review aside{
+  margin-top: 5px;
+}
+
+img#share{
+  width: 30px;
+  height: 30px;
+
+  object-fit: cover;
+  filter: invert(1);
+}
+
+.stuff h6 {
+  color: white;
+  font-size: 16px;
+}
+
+.b {
+  border-right: 1px solid white;
+}
+.detalhes {
+  width: fit-content;
+  padding-left: 50px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.detalhes h1 {
+  color: #00e082;
+  font-size: 6.8em;
+  transition: 0.2s;
+}
+
+.detalhes h3 {
+  color: gray;
+  font-size: 2em;
+  text-decoration: line-through;
+  padding: 2px 0 5% 0px;
+}
+.detalhes h4 {
+  color: white;
+  font-size: 1.2em;
+  padding-bottom: 3%;
+}
+.detalhes h5 {
+  color: #0cf2f0;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+}
+.detalhes h5:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+.tudo input[type="submit"] {
+  min-width: 360px;
+  min-height: 80px;
+  padding: 6% 8%;
+  border-radius: 24px;
+  background-color: rgba(255, 150, 9, 1);
+  font-weight: 500;
+  font-size: 2.3em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+  margin-top: 1em;
+  color: white;
+  display: block;
+}
+.tudo input[type="submit"]:hover {
+  color: black;
+  background: #dedede;
+}
+
+.barra {
+  background-color: #201c2c;
+  width: 100%;
+  height: 5em;
+  margin: 3em 1em;
+}
+.desc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+  color: white;
+}
+.desc h1,
+.desc a {
+  width: 80%;
+  padding: 1rem;
+  font-weight: 676;
+}
+
+@media (max-width: 914px) {
+  .tudo {
+    flex-direction: column;
+  }
+  .nome {
+    width: 90%;
+  }
+  .nome h2 {
+    font-weight: 774;
+    font-size: 0.8em;
+  }
+  .product-box {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .img img {
+    border-radius: 24px;
+    min-width: 412px;
+      justify-self: center;
+    background-size: cover;
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .img {
+    border: 0;
+    border-radius: 0;
+    justify-self: end;
+  }
+  .stuff {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    height: 50px;
+    margin: 3.2em 0;
+   
+  }
+
+  .stuff h6 {
+    color: white;
+    font-size: 1em;
+  }
+  .b {
+    display: none;
+  }
+  .detalhes {
+    width: 100% ;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 3em auto 2fr;
+    width: 95%;
+    padding: 5% 0% 0% 5%;
+  }
+
+  .detalhes h1 {
+    font-size: 2em;
+  }
+  .detalhes h3 {
+    font-size: 1.35em;
+    text-align: center;
+  }
+  .detalhes h4 {
+    font-size: 1em;
+    font-weight: 800;
+  }
+  .detalhes h5 {
+    font-size: 1em;
+  }
+  .produto{
+    height: fit-content;
+  }
+  .desc a {
+    width: 100%;
+    align-self: flex-start;
+    padding: 0.8em 0.8em 2em
+  }
+}
+
+/* mediaQ pra telas menores que um monitor mas não pequenas o suficiente pra mediaQ de telefone ficar boa*/
+
+@media (min-width: 915px) and (max-width: 1099px) {
+  .detalhes h1 {
+    font-size: 4em;
+  }
+  .detalhes h4 {
+    font-size: 1em;
+    font-weight: 800;
+    padding: 15% 0;
+  }
+  .tudo input[type="submit"] {
+    min-width: 0;
+    min-height: 0;
+    width: 6em;
+  }
+}

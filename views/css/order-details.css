@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    background-color: #03030D;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;  
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Sofia Sans';
+    text-transform: uppercase;
+    color: white;
+}
+
+
+label, a, p, span, input, h1, td, th, button{
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    color: white;
+}
+
+main{
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+main .container{
+    max-width: 720px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.header h2{
+
+    margin-bottom: 20px;
+}
+
+.header .txt-box{
+    padding: 35px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 15px;
+    background-color: #FFFFFF21;
+}
+
+.product-single{
+ 
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+.img-box{
+    width: 100px;
+    height: 100px;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.left{
+    width: 85%;
+    display: flex;
+}
+
+.right{
+    width: 15%;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#address{
+    padding: 20px;
+    width: 100%;
+
+    border-radius: 15px;
+    border: 2px solid #F500F0;
+}
+
+#address .img-box{
+    width: 30px;
+    height: 30px;
+}
+
+#user, #full-address{
+    width: 100%;
+
+    display: flex;
+}
+
+#user{
+    justify-content: space-between;
+}
+
+#full-address span{
+    display: block;
+}
+
+#date, .price{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    margin: 20px 0 0 20px;
+}
+
+#last-dance{
+    margin-top: 50px;
+}
+
+.sedex{
+    margin-top: 20px;
+    padding: 0 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.sedex > div span{
+    width: 100%;
+    display: block;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.sedex#total{
+    margin: 50px 0;
+    justify-content: unset;
+}
+
+#total span{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sedex .price{
+    margin-left: 20px;
+    font-weight: unset;
+}
+
+.sedex button{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+
+    color: #FFFFFF;
+    padding: 10px 40px;
+
+    cursor: pointer;
+
+    background-color: #0084ff;
+    border-radius: 10px;
+}
+
+.sedex#button{
+    justify-content: right;
+}
+
+.sedex button:hover{
+    transition: 0.4s;
+    background-color: #51A8F8;
+}
+
+.bigger{
+    font-size: 26px;
+}

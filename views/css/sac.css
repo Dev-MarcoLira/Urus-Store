@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    background-color: #03030D;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+  
+}
+
+main{
+    flex: 1;
+    height: 100%;
+}
+
+h2, h3, h4, h5, h6, span{
+    font-family: 'Sofia Sans';
+    text-transform: uppercase;
+}
+
+
+label, a, p, span, input, h1, textarea{
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+}
+
+textarea{
+
+    width: 720px;
+    height: 70px;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    resize: none;
+    border: 1px solid black;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+main section{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main section > h2{
+    margin-left: 15px;
+    color: aliceblue;
+}
+
+main #messages-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px auto;
+}
+
+#messages-container > div{
+    margin: 10px 0;
+}
+
+#messages{
+
+    width: 100%;
+    padding: 10px 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#messages .message-single{
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+
+    display: flex;    
+    flex-direction: column;
+
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.message-single a, .message-single p{
+    color: aliceblue !important;
+}
+
+.delete{
+    width: fit-content;
+    display: block;
+
+    margin-top: 20px;
+    padding: 2px 5px;
+
+    background-color: red;
+    border-radius: 4px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=submit]{
+    max-width: fit-content;
+
+    padding: 7px;
+    margin: 10px auto 0;
+ 
+    text-align: center;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 800px) {
+    
+    #messages{
+        padding: 10px;
+    }
+
+    form textarea{
+        width: max(100%, 720px);
+        max-width: 90vw;
+    }
+
+}

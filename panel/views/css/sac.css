@@ -1,0 +1,144 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;    
+}
+body,html
+{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+
+    overflow-x: hidden;
+    background-color: rgba(16, 15, 20, 1);
+}
+
+h1, h2, h3, h4, a, button, input, span, p, li{
+    color: white;
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+}
+  
+li a, p, h3{
+    font-family: 'Source Sans Pro';
+}
+
+main{
+    width: 100%;
+    flex: 1;
+}
+
+main #chats{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 20px;
+}
+
+#chats .container{
+    width: 100%;
+    max-width: 1080px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#chats .chat-single{
+    width: 100%;
+    max-width: 500px;
+
+    padding: 10px;
+    margin: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.chat-single a, .chat-single span{
+    color: aliceblue !important;
+}
+
+.chat-single > div{
+    width: 100%;
+}
+
+.chat-single .links{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.links a{
+    font-weight: bold;
+
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+.links .delete{
+    width: fit-content;
+    display: block;
+
+    margin-top: 10px;
+
+    background-color: red;
+}
+
+.links .view{
+    background-color: purple;
+}
+
+.chat-single .user{
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user .img{
+    display: flex;
+    align-items: center;
+}
+
+.img > *{
+    margin: 0 5px;
+}
+
+.user .img-box{
+    width: 30px;
+    height: 30px;
+}
+
+.user img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+#no-chats{
+    text-transform: capitalize !important;
+}
+
+
+
+footer{
+    position: unset !important;
+}

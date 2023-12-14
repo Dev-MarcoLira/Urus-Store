@@ -1,0 +1,260 @@
+.disabled{
+  display: none !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  background-color: #03030D;
+}
+
+header .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 10px;
+}
+
+header .logo {
+
+  width: 100px;
+  height: 50px;
+  background-image: url('../images/logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+header ul {
+  display: flex !important;
+}
+
+header ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+header ul li a {
+  color: white;
+  cursor: pointer;
+  text-transform: none;
+}
+
+header #login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header #login #wrapper{
+  width: max(120px, 100%);
+  position: relative;
+}
+
+header #login ul{
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  background-color: rgba(20,20,20,1);
+}
+
+#login ul li{
+  width: 100%;
+  text-align: center;
+
+  margin: 2px auto;
+  padding: 0 10px;
+}
+
+header #login ul li:hover{
+  background-color: rgba(100,100,100,0.65);
+  transition: 0.75s;
+}
+
+#login ul a{
+  font-size: 16px;
+}
+
+
+hr{
+  width: 100%;
+  height: 1px !important;
+  
+  margin-top: 10px !important;
+  border: 0 !important;
+
+  background-color: rgba(133, 13, 255, 1);
+}
+
+
+section.find {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.find .search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 10px;
+
+  background-image: linear-gradient(to left, #0403CB, #F500F0);
+
+}
+
+.search-container form{
+  width: 100%;
+  max-width: 1280px;
+  height: 70px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.search-container input{
+  width: 50%;
+  color: black;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: none;
+  font-family: 'Source Sans Pro';
+}
+@media(max-width: 1000px){
+  .search-container input{
+    width:80%;
+  }
+  .find .search-container{
+    width: 100% !important;
+  }
+}
+
+.search-container input[type=submit]{
+  display: none;
+}
+
+input:focus{
+  outline: 0;
+}
+
+.search-container .img-box{
+  width: 5%;
+  min-width: 42px;
+  height: 40px;
+  
+  padding: 2px;
+  border-left: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0 2px 2px 0;
+
+  cursor: pointer;
+}
+
+.search-container form .img-box img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  filter: invert(100%);
+}
+
+.find .categories {
+  width: 75%;
+  margin: 10px auto 0;
+  display: flex;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: bold;
+
+}
+
+.find .categories ul {
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+
+.find .categories ul li {
+  width: 25%;
+  max-width: 200px;
+  margin: 0 auto;
+
+  text-align: center;
+  transition: .5s;
+}
+
+.find .categories ul li:hover {
+   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(to bottom, rgba(240, 40, 40, 0) 90%, rgb(255, 215, 42) 100%);
+  background-clip: content-box, padding-box;
+
+}
+
+.find .categories ul li a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+
+@media screen and (max-width: 1280px){
+  header{
+    padding: 0;
+  }
+
+  .find{
+    width: 100vw !important;
+    margin: 0 auto;
+  }
+
+  .find .search-container{
+    width: 80%;
+    margin: 0 auto !important;
+  }
+
+  .search-container form{
+    max-width: 100%;
+  }
+
+  .find .categories{
+    width: 100%;
+  }
+
+  .categories ul{
+    margin: 0 auto;
+  }
+
+  .find .categories ul li{
+    width: 20%;
+    margin: 0 10px;
+  }
+
+  .find .categories ul a{
+    font-size: 2vw;
+  }
+}

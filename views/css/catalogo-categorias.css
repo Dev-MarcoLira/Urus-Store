@@ -1,0 +1,44 @@
+#categories{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#categories h2{
+    margin-bottom: 10px;
+
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#cartegories ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#categories ul li{
+    width: 100%;
+
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+}
+
+#categories ul li a{
+    text-decoration: none;
+}
+
+#categories ul li a:hover{
+    text-decoration: underline;
+}
+
+#pages{
+    width: fit-content !important;
+    margin: 0 auto;
+
+    border-top: 2px solid white;
+}

@@ -1,0 +1,91 @@
+@font-face{
+
+	font-family: 'Sofia Sans';
+	src: url('../fonts/Sofia_Sans/SofiaSans-VariableFont_wght.ttf');
+}
+
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-LightItalic.ttf');
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-BoldItalic.ttf');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/Source_Sans_Pro/SourceSansPro-BlackItalic.ttf');
+	font-weight: 900;
+	font-style: italic;
+}

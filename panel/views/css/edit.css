@@ -1,0 +1,142 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+}
+
+body, html{
+
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+    background-color: rgba(16, 15, 20, 1);
+}
+
+h1, h2, h3, h4, a, button, input, span, label, p, li{
+    color: white;
+    font-family: 'Source Sans Pro';
+}
+  
+li a, p, h3{
+    font-family: 'Source Sans Pro';
+}
+
+
+main{
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin: 10px 0;
+}
+
+.container{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+main a{
+    width: 100px;
+    padding: 5px;
+ 
+    margin: 10px auto 0;
+    text-align: center;
+
+    background-color: #ff0c0c;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    padding: 20px;
+    margin-top: 10px;
+
+    border: 4px solid rgba(208, 0, 212, 1);
+    border-radius: 15px;
+}
+
+input, textarea, select{
+    border: 1px solid black;
+    margin: 10px 0;
+    color: black;
+}
+
+label{
+    color: white;
+    margin: 10px 0;
+}
+
+input[type=checkbox]{
+    width: 10px;
+    margin-left: 0;
+}
+
+input[type=text]{
+    border: 4px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    background-color: transparent;
+
+    color: #FFF;
+    font-size: 14px;
+    
+    padding: 10px;
+    transition: 0.35s;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+  border: 4px solid #0c8bff !important;
+  outline: none;
+}
+
+input[type=submit]{   
+    margin-top: 5%;
+    width: 100px;
+    padding: 5px;
+    margin: 0 auto;
+
+    background-color: #0C8BFF;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+select {
+    width: fit-content;
+    padding: 5px 20px;
+  
+    border: 4px solid rgba(208, 0, 212, 1);
+    border-radius: 15px;
+    background-color: rgba(16, 15, 20, 1);
+    color: white;
+    
+    transition: 0.35s;
+    outline: none;
+  }
+  
+select:hover,
+select:focus {
+    border: 4px solid #0c8bff;
+}

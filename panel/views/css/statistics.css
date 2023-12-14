@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+  background-color: rgba(16, 15, 20, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+button,
+input,
+span,
+p,
+li,
+label {
+  color: white;
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, a, button, input, span, li{
+  color: white;
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+}
+
+.container{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+main{
+  width: 100%;
+}
+
+main h1{
+  color: #00E082;
+  letter-spacing: 2px;
+
+  font-size: 36px;
+  margin: 0 0 20px 40px;
+}
+
+main .container{
+  display: flex;
+}
+
+main #right {
+  width: 75%;
+  padding: 4% 40px 0 2%;
+
+  font-family: "Source Sans Pro";
+}
+
+canvas{
+  max-width: 500px;
+}
+
+#data{
+  margin-top: 50px;
+}
+
+.row{
+  margin: 25px 0;
+  width: 100%;
+
+  padding: 10px;
+  display: flex;
+}
+
+.row > div{
+  width: 30%;
+  margin: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.row span{
+  text-align: center;
+  letter-spacing: 2px;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFFC7;
+}
+
+.row .number{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.row .number.green{
+  color: #00E082;
+}
+
+.row .number.red{
+  color: #CA0049;
+}
+
+.row .label{
+  font-size: 14px;
+}
+
+.data{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  
+  .row{
+    flex-wrap: wrap;
+  }
+
+  .row > div{
+    width: 40% !important;
+    margin: 10px;
+  }
+
+
+}

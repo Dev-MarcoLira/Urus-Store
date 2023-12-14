@@ -1,0 +1,11 @@
+footer{
+  width: 100%;
+  text-transform: uppercase;
+}
+
+footer h3{
+  font-weight: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 24;
+}

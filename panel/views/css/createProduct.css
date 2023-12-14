@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+}
+
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+  background-color: rgba(16, 15, 20, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+textarea,
+a,
+button,
+input,
+span,
+p,
+li,
+label {
+  color: white;
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  padding: 20px 20px 0;
+  font-size: 45px;
+}
+
+h2 {
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 30px;
+}
+label {
+  font-weight: 200;
+  padding-left: 10px;
+  color: white;
+  margin: 20px 0 0 0;
+}
+
+li a,
+p,
+h3 {
+  font-family: "Source Sans Pro";
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .container {
+  flex-direction: column;
+}
+
+.active{
+  display: block !important;
+}
+
+main form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 20px;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0;
+  color: black;
+}
+
+textarea{
+  padding: 10px;
+  border-radius: 10px;
+
+  text-transform: none;
+  resize: vertical;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.price,
+.promoPrice {
+  border: 4px solid white !important;
+}
+
+input {
+  border: 4px solid rgba(208, 0, 212, 1);
+  border-radius: 9px;
+  outline: none;
+}
+
+input[type=radio]{
+
+  width: 10px !important;
+  height: 10px !important;
+
+  appearance: none;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+
+  margin: 0;
+  mix-blend-mode: normal;
+  transform: rotate(90deg);
+  
+}
+
+#amount{
+  display: none;
+  text-align: center;
+  padding-left: 5px;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+  border: 4px solid #0c8bff !important;
+}
+
+input[type=radio]:checked::before,
+input[type=checkbox]:checked::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #0c8bff;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+}
+
+input[type="text"] {
+  padding-left: 18px;
+  border: 4px solid rgba(208, 0, 212, 1);
+  border-radius: 15px;
+  background-color: rgba(16, 15, 20, 1);
+  color: white;
+  height: 5em;
+  width: 100%;
+  transition: 0.35s;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input#date{
+  display: none;
+}
+
+
+
+
+
+.botao-attach-file {
+  padding: 0;
+  border: 4px solid #0c8bff;
+  border-radius: 20px;
+  height: 13em;
+  width: 11.2em;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #102434;
+  position: relative;
+}
+
+.img img{
+  height: 90%;
+  width: 90%;
+
+  border-radius: 15px 15px 0 0;
+  object-fit: contain;
+}
+
+.img label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img span{
+  display: inline-block;
+  width: fit-content;
+}
+
+.img a{
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  width: 10px;
+  margin-left: 0;
+  display: none;
+}
+
+.botao_checkbox{
+  width: 15px;
+	height: 15px;
+
+	border: 2px solid #0C8BFF;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0);
+
+	margin: 0;
+	mix-blend-mode: normal;
+	transform: rotate(90deg);
+
+	transition: .07s;
+  appearance: none;
+}
+
+.botao_checkbox.checked{
+	background-color: rgb(225, 255, 2);
+}
+
+input[type="submit"] {
+  background-color: rgba(16, 15, 20, 1);
+  border: 4px solid rgba(208, 0, 212, 1);
+  color: white;
+  padding: 16px 32px;
+  font-family: "Source Sans Pro";
+  margin: 40px 0;
+  cursor: pointer;
+  width: 10em;
+  font-size: 25px;
+  transition: 0.35s;
+}
+
+.criar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+select {
+  height: 5em;
+  width: 100%;
+
+  padding: 0 20px;
+
+  border: 4px solid rgba(208, 0, 212, 1);
+  border-radius: 15px;
+  background-color: rgba(16, 15, 20, 1);
+  color: white;
+  
+  transition: 0.35s;
+  outline: none;
+}
+
+select:hover,
+select:focus {
+  border: 4px solid #0c8bff;
+}
+
+.disabled {
+  display: none;
+}
+
+#destaque{
+  padding-left: 10px;
+  align-items: center;
+}
+
+#destaque label{
+  width: fit-content;
+  margin: 0;
+}
+
+#add-discount input,
+#add-discount label,
+#add-discount button,
+#add-image input,
+#add-image label,
+#add-image button {
+  margin: 5px 0;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.box,
+.border {
+  border: 4px solid rgba(208, 0, 212, 1);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0;
+}
+.border {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+
+#stock {
+  border: none !important;
+}
+
+#stock .border {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#dimensions > div {
+  width: 20%;
+  margin: 0 10px;
+}
+
+.flex {
+  width: 100%;
+  margin: 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto 20px auto 0;
+}
+
+footer {
+  position: unset !important;
+}
+
+.imgs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.escolha {
+  border: 4px solid rgba(208, 0, 212, 1);
+  border-radius: 20px;
+  
+  display: flex;
+  justify-content: space-between !important;
+  flex-direction: row !important;
+  align-items: center;
+
+  margin: 3em 0;
+  padding: 20px;
+}
+
+.escolha > div{
+  display: flex;
+  align-items: center;
+}
+
+.escolha label, .escolha input{
+  width: fit-content;
+  margin: 0 5px;
+}
+
+.add {
+  width: 2em;
+  height: 2em;
+}
+
+.variant {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding-left: 1em;
+  text-align: center;
+}
+
+.add_var {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+}
+.tag {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.cu {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.fotos {
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 7px 25px;
+  color: white;
+  font-weight: 600;
+}
+
+.i {
+  width: 2em;
+  height: 2em;
+  align-self: flex-end;
+}
+
+#secao {
+  margin: 20px 0;
+}
+
+.more {
+  margin-left: 10px;
+
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+}
+
+.more aside{
+  margin: 10px 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.more aside > *{
+  margin: 0;
+}

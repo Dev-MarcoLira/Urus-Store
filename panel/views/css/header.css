@@ -1,0 +1,110 @@
+.disabled{
+  display: none !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(16, 15, 20, 1);
+}
+
+header .container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+header .logo {
+
+  width: 100px;
+  height: 50px;
+  background-image: url('../images/logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+header ul li a {
+  color: white;
+  cursor: pointer;
+}
+
+header #login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+header #login #wrapper{
+  width: max(150px, 100%);
+  position: relative;
+}
+
+header #login-li{
+  width: 70px;
+  height: 70px;
+
+}
+
+#login-li img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+header #login ul{
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  padding: 5px 0;
+  background-color: rgba(10,10,10,1);
+}
+
+#login ul li{
+  width: 100%;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+header #login ul li:hover{
+  background-color: rgba(100,100,100,0.65);
+  transition: 0.75s;
+}
+
+#login ul a{
+  font-size: 16px;
+}
+
+hr{
+  width: 100%;
+  border: 2px solid rgb(208, 0, 212);
+}
